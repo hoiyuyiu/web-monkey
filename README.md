@@ -7,4 +7,3 @@ Personal Tampermonkey scripts for target-specific web purification and layout re
 | 名称 | 一键安装 / 更新 | 描述 |
 | :---: | :---: | :---: |
 | **QQ邮箱净化** | [![Install](https://img.shields.io/badge/Install-绿色?style=for-the-badge&logo=tampermonkey&logoColor=white)](https://raw.githubusercontent.com/hoiyuyiu/web-monkey/main/qqmail-opt.user.js) | 隐藏 VIP 相关元素，净化视觉体验。 |
-|||
