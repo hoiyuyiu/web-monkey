@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         屏蔽 QQ 邮箱 VIP
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.0
 // @description  隐藏 QQ 邮箱中 VIP 相关元素 (AI-assisted by Gemini)
 // @author       hoiyuyiu
 // @contributors Gemini
@@ -10,8 +10,6 @@
 // @match        *://mail.qq.com/*
 // @grant        GM_addStyle
 // @run-at       document-start
-// @updateURL    https://raw.githubusercontent.com/hoiyuyiu/web-monkey/main/qqmail-opt.user.js?token=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
-// @downloadURL  https://raw.githubusercontent.com/hoiyuyiu/web-monkey/main/qqmail-opt.user.js?token=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
 // ==/UserScript==
 
 (function() {
