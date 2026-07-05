@@ -10,8 +10,8 @@
 // @match        *://mail.qq.com/*
 // @grant        GM_addStyle
 // @run-at       document-start
-// @updateURL    https://raw.githubusercontent.com/hoiyuyiu/web-monkey/main/qqmail-opt.user.js?token=ghp_你的Token
-// @downloadURL  https://raw.githubusercontent.com/hoiyuyiu/web-monkey/main/qqmail-opt.user.js?token=ghp_你的Token
+// @updateURL    https://raw.githubusercontent.com/hoiyuyiu/web-monkey/main/qqmail-opt.user.js?token=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
+// @downloadURL  https://raw.githubusercontent.com/hoiyuyiu/web-monkey/main/qqmail-opt.user.js?token=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
 // ==/UserScript==
 
 (function() {
