@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         屏蔽 QQ 邮箱 VIP
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.0.0
 // @description  隐藏 QQ 邮箱中 VIP 相关元素 (AI-assisted by Gemini)
 // @author       hoiyuyiu
 // @contributors Gemini
