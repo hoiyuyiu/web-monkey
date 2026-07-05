@@ -12,6 +12,7 @@
 // @run-at       document-start
 // @updateURL    https://raw.githubusercontent.com/hoiyuyiu/web-monkey/main/qqmail-opt.user.js
 // @downloadURL  https://raw.githubusercontent.com/hoiyuyiu/web-monkey/main/qqmail-opt.user.js
+// ==/UserScript==
 
 (function() {
     'use strict';
