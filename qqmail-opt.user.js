@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         屏蔽 QQ 邮箱 VIP
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.0.2
 // @description  隐藏 QQ 邮箱中 VIP 相关元素 (AI-assisted by Gemini)
 // @author       hoiyuyiu
 // @contributors Gemini
@@ -21,17 +21,16 @@
     // 1. 纯 CSS 屏蔽部分（100% 精准靶向，绝不误伤）
     // ==========================================
     const targetSelectors = [
-        '.xmail-cmp-vip-embed-bubble',                                                    // 1. VIP 气泡提示
-        '.cmp-user-info-name .cmp-vip-icon-click',                                        // 2. “成为 VIP”小标签/图标
-        '.xmail-ui-btn.ui-btn-size32.ui-btn-them-clear-gray:has(.ui-btn-text .cmp-vip-icon)', // 3. 包含会员图标的灰色外层按钮
-        '.profile-user-info .cmp-vip-state-icon',                                         // 4. “普通用户”状态标签
-        '.mail-setting-vip-bar.setting-vip-bar-none',                                     // 5. 设置中的 VIP 提示条
-        '.xmail-cmp-vip-streamer',                                                        // 6. VIP 横幅/流式元素
-        '.frame-sidebar-menu:has(.cmp-vip-icon)',                                         // 7. 包含 VIP 图标的侧边栏菜单
-
-        // 8. 彻底整行屏蔽原本包含“会员专属”标题的整行，以及它的卡片行（防止留白）
-        '.setting-item-row:has(.setting-theme-card-group-title .cmp-vip-icon)',
-        '.setting-item-row:has(.setting-theme-card-group-title .cmp-vip-icon) + .setting-item-row'
+        '.xmail-cmp-vip-streamer',                                                          // 1. VIP 横幅/流式元素 (24)
+        '.xmail-cmp-vip-float-bubble',                                                      // 2. VIP 悬浮广告气泡 (28)
+        '.xmail-cmp-vip-embed-bubble',                                                      // 3. VIP 气泡提示 (28)
+        '.profile-user-info .cmp-vip-state-icon',                                           // 4. “普通用户”状态标签 (39)
+        '.frame-sidebar-menu:has(.cmp-vip-icon)',                                           // 5. 包含 VIP 图标的侧边栏菜单 (41)
+        '.cmp-user-info-name .cmp-vip-icon-click',                                          // 6. “成为 VIP”小标签/图标 (42)
+        '.mail-setting-vip-bar.setting-vip-bar-none',                                       // 7. 设置中的 VIP 提示条 (44)
+        '.setting-item-row:has(.setting-theme-card-group-title .cmp-vip-icon)',             // 8. 包含“会员专属”标题的整行 (70)
+        '.xmail-ui-btn.ui-btn-size32.ui-btn-them-clear-gray:has(.ui-btn-text .cmp-vip-icon)', // 9. 包含会员图标的灰色外层按钮 (84)
+        '.setting-item-row:has(.setting-theme-card-group-title .cmp-vip-icon) + .setting-item-row' // 10. 会员专属的卡片行 (89)
     ];
 
     const combinedStyle = targetSelectors.join(', ');
